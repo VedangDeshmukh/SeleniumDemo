@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Sanity Suite" parallel= "tests" thread-count="2" verbose ="4">
+
+	<test name="HRMS Test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="url" value="https://www.orangehrm.com/orangehrm-30-day-trial/" />
+
+		<classes>
+			<class name="com.qa.test.HRMSTest" />
+		</classes>
+
+	</test>
+
+	<test name="Googgle Test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="url" value="https://google.co.in" />
+
+		<classes>
+			<class name="com.qa.test.GoogleTest" />
+		</classes>
+
+	</test>
+
+
+</suite>
